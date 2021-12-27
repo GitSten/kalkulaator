@@ -20,6 +20,13 @@ def divide(x, y):
     """divide func"""
 
     return (x / y)
+
+def square_root(x):
+    """square root func"""
+
+    return(x ** 0.5)
+
+
 print("__________________")
 print("|                 |")
 print("|Select operation.|")
@@ -27,19 +34,20 @@ print("|1.Add            |")
 print("|2.Subtract       |")
 print("|3.Multiply    ️ |")
 print("|4.Divide         |")
-print("|                 |")
+print("|5.Square root    |")
 print("___________________")
 
 
 while True:
 
-    choice = input("Enter choice(1/2/3/4): ")
+    choice = input("Enter choice(1/2/3/4/5/6): ")
 
 
 
-    if choice in ('1', '2', '3', '4'):
+    if choice in ('1', '2', '3', '4',):
         num1 = float(input("Enter first number: "))
         num2 = float(input("Enter second number: "))
+
 
         if choice == '1':
             print(num1, "+", num2, "=", add(num1, num2))
@@ -52,6 +60,20 @@ while True:
 
         elif choice == '4':
             print(num1, "/", num2, "=", divide(num1, num2))
+
+    else:
+        if choice in "5":
+            num1 = float(input("Enter number: "))
+            print(num1,"** 0.5","=",square_root(num1))
+
+
+
+
+
+
+
+
+
 
         next_calculation = input("Let's do next calculation? (yes/no): ")
 
@@ -66,7 +88,7 @@ while True:
             print("|2.Subtract       |")
             print("|3.Multiply    ️ |")
             print("|4.Divide         |")
-            print("|                 |")
+            print("|5.Square root    |")
             print("___________________")
 
 
