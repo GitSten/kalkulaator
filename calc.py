@@ -1,5 +1,4 @@
 
-
 def add(x,y):
 
     """add func"""
@@ -26,15 +25,20 @@ def square_root(x):
 
     return(x ** 0.5)
 
+def root(x):
+    return(x * x )
 
-print("__________________")
-print("|                 |")
+
+print("___Calc ver 1.0___|")
+print("Built by Sten Sagar")
+print("| --------------- |")
 print("|Select operation.|")
 print("|1.Add            |")
 print("|2.Subtract       |")
-print("|3.Multiply    ️ |")
+print("|3.Multiply       |")
 print("|4.Divide         |")
 print("|5.Square root    |")
+print("|6.Root           |")
 print("___________________")
 
 
@@ -61,14 +65,33 @@ while True:
         elif choice == '4':
             print(num1, "/", num2, "=", divide(num1, num2))
 
+
+        next_calculation = input("Let's do next calculation? (yes/no): ")
+
+        if next_calculation == "no":
+            break
+
+        if next_calculation == "yes":
+            print("__________________")
+            print("|                 |")
+            print("|Select operation.|")
+            print("|1.Add            |")
+            print("|2.Subtract       |")
+            print("|3.Multiply       |")
+            print("|4.Divide         |")
+            print("|5.Square root    |")
+            print("|6.Root           |")
+            print("___________________")
+
+
     else:
         if choice in "5":
             num1 = float(input("Enter number: "))
             print(num1,"** 0.5","=",square_root(num1))
 
-
-
-
+        if choice in "6":
+            num1=float(input("Enter Number: "))
+            print(num1,"*","=",root(num1))
 
 
 
@@ -86,9 +109,10 @@ while True:
             print("|Select operation.|")
             print("|1.Add            |")
             print("|2.Subtract       |")
-            print("|3.Multiply    ️ |")
+            print("|3.Multiply       |")
             print("|4.Divide         |")
             print("|5.Square root    |")
+            print("|6.Root           |")
             print("___________________")
 
 

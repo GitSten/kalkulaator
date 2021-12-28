@@ -21,8 +21,13 @@ class testcalc(unittest.TestCase):
     def test_divide(self):
         self.assertEqual(calc.divide(10,5), 2)
 
+
     def test_square_root(self):
         self.assertEqual(calc.square_root(100),10)
+
+    def test_root(self):
+        self.assertEqual(calc.root(10),100)
+
 
 
 
