@@ -47,6 +47,8 @@ while True:
     choice = input("Enter choice(1/2/3/4/5/6): ")
 
 
+
+
     if choice in ('1', '2', '3', '4',):
         num1 = float(input("Enter first number: "))
         num2 = float(input("Enter second number: "))
@@ -67,14 +69,14 @@ while True:
 
 
     else:
-        if choice in "5":
+        if choice in "5,6":
             num1 = float(input("Enter number: "))
+
+        if choice =="5":
             print(num1,"** 0.5","=",square_root(num1))
 
-        if choice in "6":
-            num1=float(input("Enter Number: "))
+        if choice == "6":
             print(num1,"*","=",root(num1))
-
 
 
         next_calculation = input("Let's do next calculation? (yes/no): ")
