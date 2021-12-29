@@ -1,3 +1,4 @@
+import click
 
 def add(x,y):
 
@@ -50,8 +51,10 @@ while True:
 
 
     if choice in ('1', '2', '3', '4',):
-        num1 = float(input("Enter first number: "))
-        num2 = float(input("Enter second number: "))
+        num1 = click.prompt('Please enter first number', type=float)
+        num2 = click.prompt('Please enter second number', type=float)
+
+
 
 
         if choice == '1':
@@ -67,9 +70,11 @@ while True:
             print(num1, "/", num2, "=", divide(num1, num2))
 
 
+
+
     else:
         if choice in "5,6":
-            num1 = float(input("Enter number: "))
+            num1 = click.prompt('Please enter number', type=float)
 
         if choice =="5":
             print("√",num1,"=",square_root(num1))
@@ -94,3 +99,6 @@ while True:
             print("|5.Square root    |")
             print("|6.Root           |")
             print("___________________")
+
+        if choice == "a,b,c":
+            print("not a number")
