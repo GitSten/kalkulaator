@@ -89,16 +89,17 @@ while True:
             break
 
         if next_calculation == "yes":
-            print("__________________")
-            print("|                 |")
-            print("|Select operation.|")
-            print("|1.Add            |")
-            print("|2.Subtract       |")
-            print("|3.Multiply       |")
-            print("|4.Divide         |")
-            print("|5.Square root    |")
-            print("|6.Root           |")
+            print("|___Calc ver 1.0____|")
+            print(" Built by Sten Sagar ")
+            print("| ---------------   |")
+            print("|Select operation.  |")
+            print("|1.Add         +    |")
+            print("|2.Subtract    -    |")
+            print("|3.Multiply    *    |")
+            print("|4.Divide      /    |")
+            print("|5.Square root √    |")
+            print("|6.Root        x²   |")
             print("___________________")
 
-        if choice == "a,b,c":
-            print("not a number")
+
+
